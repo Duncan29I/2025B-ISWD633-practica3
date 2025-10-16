@@ -20,4 +20,5 @@ Si solucionó un problema presentado o utilizó otros comandos que no se mencion
 3. Verificar que se crearon los directorios:
    # Verificar estructura de directorios
 docker exec server-drupal ls -la /var/www/html/sites/default/files/
+
 4. Volver a la instalación.
