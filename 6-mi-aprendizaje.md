@@ -19,6 +19,6 @@ Si solucionó un problema presentado o utilizó otros comandos que no se mencion
     docker exec server-drupal chmod -R 755 /var/www/html/sites/default/files
 3. Verificar que se crearon los directorios:
    # Verificar estructura de directorios
-docker exec server-drupal ls -la /var/www/html/sites/default/files/
+    docker exec server-drupal ls -la /var/www/html/sites/default/files/
 
 4. Volver a la instalación.
