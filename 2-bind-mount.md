@@ -19,10 +19,11 @@ docker run -d --name <nombre contenedor> --mount type=bind,source=<ruta carpeta 
 
 PS C:\Users\Italo>  docker run -d --name nginx-container -p 80:80 -v "$(pwd)/nginx/html:/usr/share/nginx/html" nginx:alpine
 
-¿Qué sucede al ingresar al servidor de nginx?
+### ¿Qué sucede al ingresar al servidor de nginx?
+
 Al ingresar a http://localhost:80 se mostrará la página "403 Forbidden" o "404 Not Found" porque la carpeta html en el host está vacía. Nginx no encuentra un archivo index.html para servir.
 
-¿Qué pasa con el archivo index.html del contenedor?
+### ¿Qué pasa con el archivo index.html del contenedor?
 El archivo index.html original del contenedor queda oculto por el volumen mapeado. Al mapear la carpeta vacía del host sobre /usr/share/nginx/html, se reemplaza completamente el contenido del contenedor, perdiendo la página por defecto de Nginx.
 
 ### Ir a https://html5up.net/ y descargar un template gratuito, descomprirlo dentro de tu computador en la carpeta html
